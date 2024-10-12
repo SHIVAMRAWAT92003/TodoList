@@ -134,7 +134,7 @@ body {
   padding-block: 30px;
   display: grid;
   grid-template-columns: 1fr;
-  overflow-y: auto; /* Added overflow to make it scrollable */
+  overflow: hidden;
   opacity: 0;
 }
 
@@ -151,11 +151,8 @@ body.loaded {
 
 
 
-.container {
-  padding-inline: 20px;
-  height: 100%; /* Make sure the container has a height */
-  overflow-y: auto; /* Add scroll behavior */
-}
+
+.container { padding-inline: 20px; }
 
 .container,
 .main,
@@ -171,10 +168,10 @@ body.loaded {
 
 
 
+
 .app-box {
   position: relative;
   z-index: 1;
-  overflow-y: auto; /* Added overflow to make it scrollable */
 }
 
 .header {
